@@ -1,27 +1,78 @@
 # npm-dview
 
-Compare current package.json dependency version numbers with latest remote version number.
 
-## Getting Started
-Install the module with: `npm install npm-dview`
+## Description ##
 
-```javascript
-var npm_dview = require('npm-dview');
-npm_dview.awesome(); // "awesome"
-```
+npm-dview is a command line tool for comparing a package.json file's dependency version
+numbers with the latest remove version number.  
+  
+It compares both "dependencies" and/or "devDependencies".  
+  
+It accomplishes this by calling "npm view MODULE_NAME version" for each dependency listed
+in your package.json file.
 
-## Documentation
-_(Coming soon)_
 
-## Examples
-_(Coming soon)_
+## Installation ##
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+Install the command line tool globally by running:
 
-## Release History
-_(Nothing yet)_
+	npm install -g npm-dview
 
-## License
+
+## Usage ##
+
+	Usage: npm-dview [options]
+
+
+## Options ##
+
+	-h, --help     output usage information
+	-v, --version  output the version number
+	--dep-only     Only show regular dependencies
+	--dev-only     Only show development dependencies
+	--file <file>  The location of the package.json file
+
+
+## Screenshots ##
+
+#### Default Usage: ####
+
+![Default Usage](https://github.com/skratchdot/npm-dview/raw/master/screenshots/default.png)  
+
+#### Help: ####
+
+![Help](https://github.com/skratchdot/npm-dview/raw/master/screenshots/help.png)  
+
+#### List Regular Dependencies Only: ####
+
+![List Regular Dependencies Only](https://github.com/skratchdot/npm-dview/raw/master/screenshots/dep-only.png)  
+
+
+## Contributing ##
+
+In lieu of a formal styleguide, take care to maintain the existing coding style.
+Add unit tests for any new or changed functionality. Lint and test your code 
+using [Grunt](http://gruntjs.com/).
+
+
+## Release History ##
+
+- Version 0.1.0 - Released April 13, 2013
+
+  - Initial Implementation
+
+
+## Todo ##
+
+- Add unit tests
+
+- Show progress bar/message while making remote calls
+
+- Add new column: "locally installed"
+
+
+## License ##
+
 Copyright (c) 2013 skratchdot  
 Licensed under the MIT license.
+
