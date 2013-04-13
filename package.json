@@ -3,10 +3,12 @@
 	"description": "Compare current package.json dependency version numbers with latest remote version number.",
 	"version": "0.1.0",
 	"homepage": "http://skratchdot.com/projects/npm-dview",
-	"author": {
-		"name": "skratchdot",
-		"email": "git@skratchdot.com"
+	"preferGlobal" : true,
+	"main" : "./lib/npm-dview.js",
+	"bin" : {
+		"npm-dview" : "./lib/npm-dview.js"
 	},
+	"author" : "skratchdot",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/skratchdot/npm-dview.git"
@@ -20,7 +22,6 @@
 			"url": "http://skratchdot.com/projects/npm-dview/blob/master/LICENSE-MIT"
 		}
 	],
-	"main": "lib/npm-dview",
 	"engines": {
 		"node": ">= 0.6.0"
 	},
@@ -28,7 +29,7 @@
 		"test": "grunt nodeunit"
 	},
 	"dependencies" : {
-		"async" : "0.2.6",
+		"async" : "0.2.7",
 		"cli-table" : "0.2.0",
 		"commander" : "1.1.1"
 	},
