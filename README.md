@@ -4,7 +4,7 @@
 ## Description ##
 
 npm-dview is a command line tool for comparing a package.json file's dependency version
-numbers with the latest remove version number.  
+numbers with the latest remote version number.  
   
 It compares both "dependencies" and/or "devDependencies".  
   
