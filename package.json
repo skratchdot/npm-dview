@@ -1,0 +1,42 @@
+{
+	"name": "npm-dview",
+	"description": "Compare current package.json dependency version numbers with latest remote version number.",
+	"version": "0.1.0",
+	"homepage": "http://skratchdot.com/projects/npm-dview",
+	"author": {
+		"name": "skratchdot",
+		"email": "git@skratchdot.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/skratchdot/npm-dview.git"
+	},
+	"bugs": {
+		"url": "https://github.com/skratchdot/npm-dview/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://skratchdot.com/projects/npm-dview/blob/master/LICENSE-MIT"
+		}
+	],
+	"main": "lib/npm-dview",
+	"engines": {
+		"node": ">= 0.6.0"
+	},
+	"scripts": {
+		"test": "grunt nodeunit"
+	},
+	"dependencies" : {
+		"async" : "0.2.6",
+		"cli-table" : "0.2.0",
+		"commander" : "1.1.1"
+	},
+	"devDependencies": {
+		"grunt-contrib-jshint": "~0.1.1",
+		"grunt-contrib-nodeunit": "~0.1.2",
+		"grunt-contrib-watch": "~0.2.0",
+		"grunt": "~0.4.0"
+	},
+	"keywords": ["npm", "cli", "tool", "dependencies", "report"]
+}
