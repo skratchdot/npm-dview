@@ -61,14 +61,19 @@ using [Grunt](http://gruntjs.com/).
 
   - Initial Implementation
 
+- Version 0.1.1 - Released May 3, 2013
+
+  - New columns: "Local" and "Current?"
+  - Changed column name: "Requested Version" -> "Requested"
+  - Changed column name: "Remote Version" -> "Remote"
+  - Updating "async" version
+
 
 ## Todo ##
 
 - Add unit tests
 
 - Show progress bar/message while making remote calls
-
-- Add new column: "locally installed"
 
 
 ## License ##
