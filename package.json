@@ -1,7 +1,7 @@
 {
 	"name": "npm-dview",
 	"description": "Compare current package.json dependency version numbers with latest remote version number.",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"homepage": "http://skratchdot.com/projects/npm-dview",
 	"preferGlobal" : true,
 	"main" : "./lib/npm-dview.js",
@@ -36,7 +36,7 @@
 	"devDependencies": {
 		"grunt-contrib-jshint": "~0.1.1",
 		"grunt-contrib-nodeunit": "~0.1.2",
-		"grunt-contrib-watch": "~0.2.0",
+		"grunt-contrib-watch": "~0.4.0",
 		"grunt": "~0.4.0"
 	},
 	"keywords": ["npm", "cli", "tool", "dependencies", "report"]
