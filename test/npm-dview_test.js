@@ -3,7 +3,8 @@
 var exec = require('child_process').exec;
 var execPrefix = 'node ' + __dirname + '/../lib/npm-dview.js ';
 var packageJson = require('../package.json');
-var regexHeader = new RegExp('Module Name', 'g');
+var regexHeaderFound = new RegExp('Module Name', 'g');
+var regexHeaderNotFound = new RegExp('Warning', 'g');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -41,25 +42,34 @@ exports['npm-dview tests'] = {
 	},
 	'npm-dview': function (test) {
 		exec(execPrefix, function (error, stdout, stderr) {
-			var res = stdout.match(regexHeader) || [];
+			var res = stdout.match(regexHeaderFound) || [];
 			test.expect(2);
 			test.equal(res.length, 2, 'should show 2 tables');
 			test.equal(stderr, '', 'should be an empty string');
 			test.done();
 		});
 	},
-	'npm-dview --dep-only': function (test) {
-		exec(execPrefix + '--dep-only', function (error, stdout, stderr) {
-			var res = stdout.match(regexHeader) || [];
+	'npm-dview --dep': function (test) {
+		exec(execPrefix + '--dep', function (error, stdout, stderr) {
+			var res = stdout.match(regexHeaderFound) || [];
 			test.expect(2);
 			test.equal(res.length, 1, 'should show 1 table');
 			test.equal(stderr, '', 'should be an empty string');
 			test.done();
 		});
 	},
-	'npm-dview --dev-only': function (test) {
-		exec(execPrefix + '--dev-only', function (error, stdout, stderr) {
-			var res = stdout.match(regexHeader) || [];
+	'npm-dview --dev': function (test) {
+		exec(execPrefix + '--dev', function (error, stdout, stderr) {
+			var res = stdout.match(regexHeaderFound) || [];
+			test.expect(2);
+			test.equal(res.length, 1, 'should show 1 table');
+			test.equal(stderr, '', 'should be an empty string');
+			test.done();
+		});
+	},
+	'npm-dview --peer': function (test) {
+		exec(execPrefix + '--peer', function (error, stdout, stderr) {
+			var res = stdout.match(regexHeaderNotFound) || [];
 			test.expect(2);
 			test.equal(res.length, 1, 'should show 1 table');
 			test.equal(stderr, '', 'should be an empty string');

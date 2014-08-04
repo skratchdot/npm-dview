@@ -32,11 +32,12 @@ Install the command line tool globally by running:
 
 ## Options ##
 
-	-h, --help     output usage information
-	-v, --version  output the version number
-	--dep-only     Only show regular dependencies
-	--dev-only     Only show development dependencies
-	--file <file>  The location of the package.json file
+    -h, --help     output usage information
+    -v, --version  output the version number
+    --dep          Show regular dependencies
+    --dev          Show development dependencies
+    --peer         Show peer dependencies
+    --file <file>  The location of the package.json file
 
 
 ## Screenshots ##
