@@ -37,6 +37,7 @@ Install the command line tool globally by running:
     --dep          Show regular dependencies
     --dev          Show development dependencies
     --peer         Show peer dependencies
+    --update       Update the package.json file with remote version numbers
     --file <file>  The location of the package.json file
 
 
@@ -63,6 +64,11 @@ using [Grunt](http://gruntjs.com/).
 
 
 ## Release History ##
+
+- Version 1.0.0 - Released Aug 4, 2014
+  - now processing peerDependencies.
+  - changed cli option names.
+  - auto updating package.json when `--update` option is passed.
 
 - Version 0.3.0 - Released June 2, 2014
 

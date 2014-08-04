@@ -1,50 +1,50 @@
 {
-	"name": "npm-dview",
-	"description": "Compare current package.json dependency version numbers with latest remote version number.",
-	"version": "1.0.0",
-	"homepage": "http://skratchdot.com/projects/npm-dview",
-	"preferGlobal" : true,
-	"main" : "./lib/npm-dview.js",
-	"bin" : {
-		"npm-dview" : "./lib/npm-dview.js"
-	},
-	"author" : "skratchdot",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/skratchdot/npm-dview.git"
-	},
-	"bugs": {
-		"url": "https://github.com/skratchdot/npm-dview/issues"
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://skratchdot.com/projects/npm-dview/blob/master/LICENSE-MIT"
-		}
-	],
-	"engines": {
-		"node": ">= 0.6.0"
-	},
-	"scripts": {
-		"test": "grunt nodeunit"
-	},
-	"dependencies" : {
-		"async" : "0.9.0",
-		"cli-table" : "0.3.0",
-		"commander" : "2.2.0"
-	},
-	"devDependencies": {
-		"grunt-contrib-jshint": "~0.10.0",
-		"grunt-contrib-nodeunit": "~0.4.0",
-		"grunt-contrib-watch": "~0.6.1",
-		"grunt": "~0.4.5"
-	},
-	"keywords": [
-		"npm",
-		"cli",
-		"tool",
-		"dependencies",
-		"report",
-		"david-dm"
-	]
+  "name": "npm-dview",
+  "description": "Compare current package.json dependency version numbers with latest remote version number.",
+  "version": "1.0.0",
+  "homepage": "http://skratchdot.com/projects/npm-dview",
+  "preferGlobal": true,
+  "main": "./lib/npm-dview.js",
+  "bin": {
+    "npm-dview": "./lib/npm-dview.js"
+  },
+  "author": "skratchdot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skratchdot/npm-dview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skratchdot/npm-dview/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://skratchdot.com/projects/npm-dview/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "async": "0.9.0",
+    "cli-table": "0.3.0",
+    "commander": "2.3.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "npm",
+    "cli",
+    "tool",
+    "dependencies",
+    "report",
+    "david-dm"
+  ]
 }
