@@ -31,7 +31,7 @@
   "dependencies": {
     "async": "0.9.0",
     "cli-table": "0.3.0",
-    "commander": "2.3.0"
+    "commander": "2.4.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.10.0",
