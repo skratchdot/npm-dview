@@ -32,13 +32,14 @@ Install the command line tool globally by running:
 
 ## Options ##
 
-    -h, --help     output usage information
-    -v, --version  output the version number
-    --dep          Show regular dependencies
-    --dev          Show development dependencies
-    --peer         Show peer dependencies
-    --update       Update the package.json file with remote version numbers
-    --file <file>  The location of the package.json file
+    -h, --help       output usage information
+    -v, --version    output the version number
+    --dep            Show regular dependencies
+    --dev            Show development dependencies
+    --peer           Show peer dependencies
+    --update         Update the package.json file with remote version numbers
+    --output [type]  Specify the output type [table,json]
+    --file <file>    The location of the package.json file
 
 
 ## Screenshots ##
@@ -64,6 +65,20 @@ using [Grunt](http://gruntjs.com/).
 
 
 ## Release History ##
+
+- Version 1.2.0 - Released Aug 14, 2015
+  - Show ticks and crosses in place of boolean (for whether or not version is current)
+  - New cli option that allows json to be output instead of a table
+
+- Version 1.1.2 - Released Nov 17, 2014
+  - url test now just checks for presence of '/'
+
+- Version 1.1.1 - Released Oct 22, 2014
+  - url parsing bugfix.
+  - stop trying to get remote version for urls.
+
+- Version 1.1.0 - Released Oct 21, 2014
+  - stop processing urls and don't update package.json with ???
 
 - Version 1.0.0 - Released Aug 4, 2014
   - now processing peerDependencies.
@@ -95,6 +110,9 @@ using [Grunt](http://gruntjs.com/).
 - Add unit tests
 
 - Show progress bar/message while making remote calls
+
+- Split cli logic into new file, and expose a function that allows other libraries
+  to use this via require('npm-dview').
 
 
 ## License ##
