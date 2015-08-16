@@ -32,14 +32,15 @@ Install the command line tool globally by running:
 
 ## Options ##
 
-    -h, --help       output usage information
-    -v, --version    output the version number
-    --dep            Show regular dependencies
-    --dev            Show development dependencies
-    --peer           Show peer dependencies
-    --update         Update the package.json file with remote version numbers
-    --output [type]  Specify the output type [table,json]
-    --file <file>    The location of the package.json file
+    -h, --help           output usage information
+    -v, --version        output the version number
+    --dep                Show regular dependencies
+    --dev                Show development dependencies
+    --peer               Show peer dependencies
+    --update             Update the package.json file with remote version numbers
+    --output [type]      Specify the output type [table,json]
+    --outputFile <file>  the file to write data to
+    --file <file>        The location of the package.json file
 
 
 ## Screenshots ##
@@ -65,6 +66,11 @@ using [Grunt](http://gruntjs.com/).
 
 
 ## Release History ##
+
+- Version 1.3.0 - Released Aug 16, 2015
+  - adding an --outputFile argument
+  - adding a progress bar
+  - changing the format of the json output
 
 - Version 1.2.0 - Released Aug 14, 2015
   - Show ticks and crosses in place of boolean (for whether or not version is current)
