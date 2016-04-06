@@ -76,6 +76,15 @@ exports['npm-dview tests'] = {
 			test.done();
 		});
 	},
+	'npm-dview --hideLocal': function (test) {
+		exec(execPrefix + '--hideLocal', function (error, stdout, stderr) {
+			var res = stdout.match(regexHeaderNotFound) || [];
+			test.expect(2);
+			test.equal(res.length, 1, 'should show 1 table');
+			test.equal(stderr, '', 'should be an empty string');
+			test.done();
+		});
+	},
 	'npm-dview --file': function (test) {
 		exec(execPrefix + '--file', function (error, stdout, stderr) {
 			test.expect(1);
