@@ -67,6 +67,10 @@ using [Grunt](http://gruntjs.com/).
 
 ## Release History ##
 
+- Version 2.0.1 - Released Apr 9, 2016
+  - updating README
+	- updating package dependencies
+
 - Version 2.0.0 - Released Aug 25, 2015
   - adding --excludeCurrent command line option.
 

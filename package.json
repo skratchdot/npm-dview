@@ -1,7 +1,7 @@
 {
   "name": "npm-dview",
   "description": "Compare current package.json dependency version numbers with latest remote version number.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "http://skratchdot.com/projects/npm-dview",
   "preferGlobal": true,
   "main": "./lib/npm-dview.js",
