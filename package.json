@@ -29,18 +29,18 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "async": "1.4.2",
+    "async": "2.0.0-rc.3",
     "cli-table": "0.3.1",
     "colors": "^1.1.2",
-    "commander": "2.8.1",
+    "commander": "2.9.0",
     "progress": "^1.1.8",
-    "supports-color": "^3.1.0"
+    "supports-color": "^3.1.2"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt": "~0.4.5"
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt": "~1.0.1"
   },
   "keywords": [
     "npm",
