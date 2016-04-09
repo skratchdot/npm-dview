@@ -21,12 +21,12 @@ in your package.json file.
 
 Install the command line tool globally by running:
 
-	npm install -g npm-dview
+    npm install -g npm-dview
 
 
 ## Usage ##
 
-	Usage: npm-dview [options]
+    Usage: npm-dview [options]
 
 
 ## Options ##
@@ -37,6 +37,7 @@ Install the command line tool globally by running:
     --dev                Show development dependencies
     --peer               Show peer dependencies
     --update             Update the package.json file with remote version numbers
+    --excludeCurrent     Exclude up-to-date packages from the output
     --output [type]      Specify the output type [table,json]
     --outputFile <file>  the file to write data to
     --file <file>        The location of the package.json file
@@ -65,6 +66,9 @@ using [Grunt](http://gruntjs.com/).
 
 
 ## Release History ##
+
+- Version 2.0.0 - Released Aug 25, 2015
+  - adding --excludeCurrent command line option.
 
 - Version 1.3.0 - Released Aug 16, 2015
   - adding an --outputFile argument
