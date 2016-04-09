@@ -5,17 +5,16 @@
 [![Dependency Status](https://david-dm.org/skratchdot/npm-dview.svg)](https://david-dm.org/skratchdot/npm-dview)
 [![devDependency Status](https://david-dm.org/skratchdot/npm-dview/dev-status.svg)](https://david-dm.org/skratchdot/npm-dview#info=devDependencies)
 
+
 ## Description ##
 
 npm-dview is a command line tool for comparing a package.json file's dependency version
 numbers with the latest remote version number.  
-  
+
 It compares both "dependencies" and/or "devDependencies".  
-  
+
 It accomplishes this by calling "npm view MODULE_NAME version" for each dependency listed
 in your package.json file.
-
-For a webservice version of this, visit https://david-dm.org/
 
 
 ## Installation ##
@@ -62,7 +61,7 @@ Install the command line tool globally by running:
 ## Contributing ##
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
-Add unit tests for any new or changed functionality. Lint and test your code 
+Add unit tests for any new or changed functionality. Lint and test your code
 using [Grunt](http://gruntjs.com/).
 
 
@@ -122,8 +121,14 @@ using [Grunt](http://gruntjs.com/).
   to use this via require('npm-dview').
 
 
+## See Also ##
+
+- [David DM](https://david-dm.org/)
+- [updtr](https://github.com/peerigon/updtr)
+- [GreenKeeper.io](http://greenkeeper.io/)
+
+
 ## License ##
 
 Copyright (c) 2013 skratchdot  
 Licensed under the MIT license.
-
