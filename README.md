@@ -37,6 +37,7 @@ Install the command line tool globally by running:
     --dev                Show development dependencies
     --peer               Show peer dependencies
     --update             Update the package.json file with remote version numbers
+    --hideLocal          Hide dependencies which local copy same as requestedVersion
     --excludeCurrent     Exclude up-to-date packages from the output
     --output [type]      Specify the output type [table,json]
     --outputFile <file>  the file to write data to
