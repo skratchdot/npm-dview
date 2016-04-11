@@ -68,6 +68,9 @@ using [Grunt](http://gruntjs.com/).
 
 ## Release History ##
 
+- Version 2.0.3 - Released Apr 11, 2016
+  - fixed undefined when using --hideLocal
+
 - Version 2.0.2 - Released Apr 10, 2016
   - add --hideLocal cli option (thanks [@syarul](https://github.com/syarul))
 
