@@ -138,8 +138,11 @@ using [Grunt](http://gruntjs.com/).
 ## See Also ##
 
 - [David DM](https://david-dm.org/)
-- [updtr](https://github.com/peerigon/updtr)
 - [GreenKeeper.io](http://greenkeeper.io/)
+- [updtr](https://github.com/peerigon/updtr)
+- [next-updater](https://github.com/bahmutov/next-updater)
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+- [renovate](https://keylocation.sg/our-tech/renovate)
 
 
 ## License ##
