@@ -143,6 +143,7 @@ using [Grunt](http://gruntjs.com/).
 - [next-updater](https://github.com/bahmutov/next-updater)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 - [renovate](https://keylocation.sg/our-tech/renovate)
+- [npmvet](https://github.com/harksys/npmvet)
 
 
 ## License ##
